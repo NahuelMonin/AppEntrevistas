@@ -1,0 +1,81 @@
+.pnt-logo {
+  max-width: 3rem;
+  margin-right: 1%;
+}
+
+.pnt-header {
+  display: flex;
+  align-items: center;
+  background-color: #727780;
+  min-height: 10vh;
+  color: white;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.pnt-card {
+  width: 48%;
+  margin: 1%;
+}
+.pnt-clima-hora {
+  position: absolute;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5%;
+  margin-top: 2%;
+}
+
+.pnt-btn {
+  max-width: 3rem;
+  max-height: 3rem;
+  margin: 2%;
+}
+
+.pnt-btn-add {
+  margin-left: 1%;
+}
+
+.pnt-add-circle {
+  display : none;
+}
+
+.pnt-botonera {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.muted {
+  color: lightgray;
+  font-size: small;
+  margin-top: 1px;
+}
+
+@media all and (max-width: 600px) {
+  
+  .pnt-btn-add {
+    display: none;
+  }
+
+  .pnt-add-circle {
+    display: block;
+    position: fixed;
+    bottom: 5.5%;
+    right: 10%;
+    z-index: 1030;
+  }
+
+  .pnt-circle {
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 1px #444;
+  }
+  .pnt-card {
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .pnt-clima-hora {
+    display: none;
+  }
+}
